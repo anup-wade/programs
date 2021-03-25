@@ -1,18 +1,18 @@
-# Python program to display the Fibonacci sequence
+# Python Fibonacci series Program using For Loop
 
-def recur_fibo(n):
-   if n <= 1:
-       return n
-   else:
-       return(recur_fibo(n-1) + recur_fibo(n-2))
+# Fibonacci series will start at 0 and travel upto below number
+Number = int(input("\nPlease Enter the Range Number: "))
 
-nterms = 10
-
-# check if the number of terms is valid
-if nterms <= 0:
-   print("Plese enter a positive integer")
-else:
-   print("Fibonacci sequence:")
-   for i in range(nterms):
-       print(recur_fibo(i))
-
+# Initializing First and Second Values of a Series
+First_Value = 0
+Second_Value = 1
+           
+# Find & Displaying Fibonacci series
+for Num in range(0, Number):
+           if(Num <= 1):
+                      Next = Num
+           else:
+                      Next = First_Value + Second_Value
+                      First_Value = Second_Value
+                      Second_Value = Next
+           print(Next)
