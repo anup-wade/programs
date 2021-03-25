@@ -1,6 +1,10 @@
+<<<<<<< Updated upstream
 ax2 + bx + c = 0, where
 a, b and c are real numbers and
 a ≠ 0# Solve the quadratic equation ax**2 + bx + c = 0
+=======
+# Solve the quadratic equation ax**2 + bx + c = 0
+>>>>>>> Stashed changes
 
 # import complex math module
 import cmath
